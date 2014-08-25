@@ -15,6 +15,9 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+#code to prevent initializing application as part of assets precompile task
+config.assets.initialize_on_precompile = false
+
 module SampleApp
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
