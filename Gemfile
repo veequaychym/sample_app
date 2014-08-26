@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
+
 gem 'rails', '3.2.16'
+
+gem 'jquery-rails'
+gem 'turbolinks', '1.1.1'
+gem 'jbuilder', '1.0.2'
+gem 'pg', '0.15.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -17,16 +23,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'turbolinks', '1.1.1'
-gem 'jbuilder', '1.0.2'
-
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
@@ -36,7 +37,6 @@ group :test do
 end
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
 end
 # To use ActiveModel has_secure_password
