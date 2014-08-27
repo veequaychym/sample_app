@@ -7,7 +7,7 @@ development:
   adapter: postgresql
   encoding: utf8
   database: saasbook
-  username: saasbook
+  username: saasbook_development
   password: saasbook
   pool: 5
   timeout: 5000
@@ -19,7 +19,7 @@ test:
   adapter: postgresql
   encoding: utf8
   database: saasbook
-  username: saasbook
+  username: saasbook_test
   password: saasbook
   pool: 5
   timeout: 5000

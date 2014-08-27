@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: saasbook
+  database: saasbook_development
   username: saasbook
   password: saasbook
   pool: 5
@@ -18,7 +18,7 @@ development:
 test:
   adapter: postgresql
   encoding: utf8
-  database: saasbook
+  database: saasbook_test
   username: saasbook
   password: saasbook
   pool: 5
