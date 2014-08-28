@@ -1,14 +1,17 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.1.2'
+#ruby-gemset=rail4.0
+gem 'rails', '4.0.8'
 
-gem 'rails', '3.2.16'
-
-gem 'jquery-rails'
+gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'pg', '0.15.1'
 gem 'bootstrap-sass', '2.3.2.0'
-gem 'sprockets', '2.2.1'
+gem 'sprockets', '2.8.0'
+gem 'sass-rails', '4.0.1'
+gem 'coffee-rails', '4.0.1'
+gem 'uglifier', '>= 2.1.1'
 
 
 # Bundle edge Rails instead:
@@ -17,13 +20,8 @@ gem 'sprockets', '2.2.1'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
 end
 
 group :doc do
@@ -37,13 +35,15 @@ end
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  gem 'factory_girl_rails', '4.2.0'
 end
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
 end
 # To use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '3.1.2'
+gem 'bcrypt', '~> 3.1.7'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
