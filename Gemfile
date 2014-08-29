@@ -12,7 +12,11 @@ gem 'sprockets', '2.8.0'
 gem 'sass-rails', '4.0.1'
 gem 'coffee-rails', '4.0.1'
 gem 'uglifier', '>= 2.1.1'
-
+gem 'faker', '1.1.2'
+gem 'bcrypt-ruby', '3.1.2'
+gem 'bcrypt', '~> 3.1.7'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -41,9 +45,7 @@ end
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
 end
-# To use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '3.1.2'
-gem 'bcrypt', '~> 3.1.7'
+
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
